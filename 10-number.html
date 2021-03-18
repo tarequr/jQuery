@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Call back function:</h3></u><br>
+
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<button class="btn">Click me</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$(".btn").click(function(){
+						//here 3000 is time
+						$('p').hide(3000,function(){
+							alert('Welcome to jQuery');
+						});
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

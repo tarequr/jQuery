@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Get: 1.Text & Html</h3></u><br>
+
+			<p class="love">Lorem ipsum dolor sit <b style="color: red;">amet consectetur</b> adipisicing elit.</p><br>
+
+			<button class="btn" id="btn12">Show Text</button>
+			<button class="btn" id="btn13">Show HTML</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn12").click(function(){
+						alert("Text: " + $(".love").text());
+					});
+
+					$("#btn13").click(function(){
+						alert("Text: " + $(".love").html());
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Get: 2.Value</h3></u><br>
+
+			<p>Name: <input type="text" value="Tarequr Rahman Sabbir" style="padding: 5px; width: 300px;" id="value"></p><br>
+
+			<button class="btn" id="showValue">Show Value</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#showValue").click(function(){
+						alert($("#value").val());
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Get: 2.Attribute</h3></u><br>
+
+			<p><a href="https://www.google.com" id="link">Google</a></p><br>
+
+			<button class="btn" id="showAtrbt">Show Attribute</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#showAtrbt").click(function(){
+						alert($("#link").attr("href"));
+					});
+				});
+			</script><br><br>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

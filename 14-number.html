@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Add: 1.append</h3></u><br>
+
+			<p id="lorem1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			<button class="btn" id="btn1">Click here</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn1").click(function(){
+						$("#lorem1").append(" <b>My name is Tarequr Rahman Sabbir.</b>")
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Add: 2.prepend</h3></u><br>
+
+			<p id="lorem2">Lorem ipsum dolor sit amet.</p>
+
+			<button class="btn" id="btn2">Click here</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn2").click(function(){
+						$("#lorem2").prepend(" <b>Hello! I am Tarequr.</b>")
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Add: 3.before</h3></u><br>
+
+			<img src="img/sabbir.jpg" width="150px" height="120px" alt="Tarequr" id="img1">
+
+			<button class="btn" id="btn3">Insert Before</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn3").click(function(){
+						$("#img1").before(" <b>Hello! .</b>")
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Add: 4.after</h3></u><br>
+
+			<img src="img/sabbir.jpg" width="150px" height="120px" alt="Tarequr" id="img2">
+
+			<button class="btn" id="btn4">Insert After</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn4").click(function(){
+						$("#img2").after(" <b>Hello! .</b>")
+					});
+				});
+			</script><br><br>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

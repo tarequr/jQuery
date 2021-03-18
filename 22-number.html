@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Filtering: 1.first,last</h3></u><br>
+
+			<div class="filtering">
+				<p>Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+			</div>
+
+			<div class="filtering">
+				<p>Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+			</div>
+
+			<div class="filtering">
+				<p>Lorem ipsum dolor sit amet.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					// $(".filtering").first().css("background","yellow");
+					$(".filtering").last().css("background","yellow");
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Filtering: 2.eq,filter,not</h3></u><br>
+
+			<div class="filtering2" id="filtering2">
+				<span>Lorem ipsum dolor sit amet.</span><br><br>
+				<span class="intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</span><br><br>
+				<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</span><br><br>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					// $("span").eq(0).css("background","yellow");
+					// $("span").filter(".intro").css("background","yellow");
+					$("span").not(".intro").css("background","yellow");
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

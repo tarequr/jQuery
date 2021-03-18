@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Event: 1.Double click</h3></u><br>
+
+			<h1 align="center" id="name">I am Tarequr Rahman Sabbir</h1>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#name').dblclick(function(){
+						$('#name').hide();
+					});
+				});
+			</script><br>
+
+			<u><h3 align="center">jQuery Event: 2.Mouse Touch click</h3></u><br>
+
+			<h1 align="center" id="name2">I am Tarequr Rahman Sabbir</h1>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#name2').mouseenter(function(){
+						$('#name2').hide();
+					});
+				});
+			</script><br>
+
+			<u><h3 align="center">jQuery Event: 3.Mouse Touch click</h3></u><br>
+
+			<p align="center" id="name3">Touch Me</p>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#name3').mouseenter(function(){
+						alert("Hey! Tarequr Rahman.");
+					});
+				});
+			</script><br>
+
+			<u><h3 align="center">jQuery Event: 4.Mouse Leave click</h3></u><br>
+
+			<p align="center" id="name4">Leave work</p>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#name4').mouseleave(function(){
+						alert("Hey! Leave mouse.");
+					});
+				});
+			</script><br>
+
+			<u><h3 align="center">jQuery Event: 5.Mouse Hover</h3></u><br>
+
+			<p align="center" id="name5">Hover Me!</p>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#name5').hover(function(){
+						alert("Hey! Tarequr.");
+					},
+
+					function(){
+						alert("Bye! Tarequr.");
+					});
+				});
+			</script><br>
+
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

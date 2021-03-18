@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Remove: 1.remove</h3></u><br>
+
+			<div class="removeFun" id="removeFun1">
+				<h2>Hello!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div><br>
+
+			<button class="btn" id="btn1">Remove Text</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn1").click(function(){
+						$("#removeFun1").remove();
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Remove: 2.empty</h3></u><br>
+
+			<div class="removeFun" id="removeFun2">
+				<h2>Hello!</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua.</p>
+			</div><br>
+
+			<button class="btn" id="btn2">Empty Text</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn2").click(function(){
+						$("#removeFun2").empty();
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

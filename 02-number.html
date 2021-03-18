@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Click Button: 1.Text Hide</h3></u><br>
+
+			<h4 align="center" id="lorem">Lorem ipsum dolor sit amet.</h4>
+
+			<input type="submit" id="btn" value="Click here." class="btn">
+
+			<!-- text hide -->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn').click(function(){
+						$('#lorem').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 2.Hide all html items</h3></u><br>
+
+			<h4 id="hello" align="center">Hello everyone. How are you?</h4>
+
+			<input type="submit" id="btn2" value="Click here." class="btn">
+
+			<!-- Hide all html items -->
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn2').click(function(){
+						$('*').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 3.Hide button</h3></u><br>
+
+			<input type="submit" id="btn3" value="I will hide" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn3').click(function(){
+						// $('#btn3').hide();
+						$(this).hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 4.Same Tag Hide</h3></u><br>
+
+			<span>This text will be hide.</span><br>
+			<span>This text will be hide.</span><br>
+
+			<input type="submit" id="btn4" value="Click here" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn4').click(function(){
+						$('span').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 5.Tag With id Hide</h3></u><br>
+
+			<p>Assalamu alaikum. How are you muslim ummah?</p><br>
+			<p class="muslim">Assalamu alaikum. How are you muslim ummah?</p><br>
+
+			<input type="submit" id="btn5" value="Click here" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn5').click(function(){
+						// $('p.muslim').hide();
+						$('p:last').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 6.Hide ul list</h3></u><br>
+
+			<h4>List 1:</h4>
+			<ul>
+				<li>Orange</li>
+				<li>Blue</li>
+				<li>Green</li>
+			</ul>
+
+			<h4>List 2:</h4>
+			<ul>
+				<li>Orange</li>
+				<li>Blue</li>
+				<li>Green</li>
+			</ul>
+
+			<input type="submit" id="btn6" value="Click here" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn6').click(function(){
+						// $('ul li:first').hide();
+						// $('ul li:first-child').hide();
+						$('ul li:nth-child(2)').hide();
+						// $('ul li:last-child').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 7. Link Tag Hide</h3></u><br>
+
+			<a href="#">facebook</a><br>
+
+			<input type="submit" id="btn7" value="Click here" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn7').click(function(){
+						// $('a').hide();
+						$('[href]').hide();
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Click Button: 8.Html Tag With Attribute</h3></u><br>
+
+			<a href="https://google.com">google</a><br>
+			<a href="https://google.com" target="_blank">google</a><br>
+
+			<input type="submit" id="btn8" value="Click here" class="btn">
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn8').click(function(){
+						$('a[target="_blank"]').hide();
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

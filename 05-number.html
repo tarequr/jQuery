@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Show and Hide Button: 1.</h3></u><br>
+
+			<p align="center" id="text1">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			<button id="hide" class="btn">Hide</button>
+			<button id="show" class="btn">Show</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#hide').click(function(){
+						$('#text1').hide();
+					});
+
+					$('#show').click(function(){
+						$('#text1').show();
+					});
+				});	
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Show and Hide Button: 2.slow hide & slow show</h3></u><br>
+
+			<p align="center" id="text2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+
+			<button id="hide2" class="btn">Hide</button>
+			<button id="show2" class="btn">Show</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#hide2').click(function(){
+						$('#text2').hide('slow');
+					});
+
+					$('#show2').click(function(){
+						$('#text2').show('slow');
+					});
+				});	
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Show and Hide Button: 3.fast hide & fast show</h3></u><br>
+
+			<p align="center" id="text3">Hello! Muhammad Habibur Rahman.</p>
+
+			<button id="hide3" class="btn">Hide</button>
+			<button id="show3" class="btn">Show</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#hide3').click(function(){
+						$('#text3').hide('fast');
+					});
+
+					$('#show3').click(function(){
+						$('#text3').show('fast');
+					});
+				});	
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Show and Hide Button: 4.hide & show using timing</h3></u><br>
+
+			<p align="center" id="text4">Hello! Farida Rahman.</p>
+
+			<button id="hide4" class="btn">Hide</button>
+			<button id="show4" class="btn">Show</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#hide4').click(function(){
+						$('#text4').hide(2000);
+					});
+
+					$('#show4').click(function(){
+						$('#text4').show(2000);
+					});
+				});	
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Show and Hide Button: 5.Using toggle.</h3></u><br>
+
+			<p align="center" id="text5">Hello! Atahar Ali Howlader.</p>
+
+			<button id="click2" class="btn">Click Here!</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#click2').click(function(){
+						$('#text5').toggle(1000);
+					});
+				});	
+			</script><br><br>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

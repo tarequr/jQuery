@@ -1,0 +1,290 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+}
+
+body{
+	font-family: arial;
+	font-size: 18px;
+	color: #444;
+	line-height: 25px;
+}
+
+.content{
+	background: #d6e0f7;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.maincontent{
+	background: #a5d432;
+	margin: 10px;
+	min-height: 500px;
+	padding: 5px 10px;
+}
+.btn{
+	padding: 5px;
+	cursor: pointer;
+}
+
+.header, .footer{
+	text-align: center;
+	background: #c2cee8;
+	padding: 10px;
+}
+
+.box1{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	margin-top: 20px;
+	display: none;
+}
+
+.box2{
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-top: 20px;
+	display: none;
+}
+
+.box3{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin-top: 20px;
+	display: none;
+}
+
+.box4{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	margin-top: 20px;
+}
+
+.box5{
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-top: 20px;
+}
+
+.box6{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin-top: 20px;
+}
+
+.box7{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	margin-top: 20px;
+}
+
+.box8{
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-top: 20px;
+}
+
+.box9{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin-top: 20px;
+}
+
+.box10{
+	width: 100px;
+	height: 100px;
+	background: orange;
+	margin-top: 20px;
+}
+
+.box11{
+	width: 100px;
+	height: 100px;
+	background: red;
+	margin-top: 20px;
+}
+
+.box12{
+	width: 100px;
+	height: 100px;
+	background: blue;
+	margin-top: 20px;
+}
+
+.button{
+	width: 500px;
+	background: #333;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	font-size: 20px;
+	margin-top: 20px;
+}
+
+.lorem{
+	width: 500px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	font-size: 16px;
+	display: none;
+}
+
+.lorem2{
+	width: 500px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.lorem3{
+	width: 500px;
+	background: #000;
+	color: #fff;
+	text-align: center;
+	margin: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.animate{
+	width: 120px;
+	height: 120px;
+	background: red;
+	margin-top: 20px;
+	position: relative;
+}
+
+.animate2{
+	width: 120px;
+	height: 120px;
+	background: red;
+	margin-top: 20px;
+	position: relative;
+	font-size: 20px;
+	padding: 10px;
+	color: #fff;
+}
+
+.clickbtn{
+	width: 500px;
+	background: #ec7027;
+	text-align: center;
+	padding: 10px;
+	font-size: 20px;
+	margin: auto;
+	margin-top: 20px;
+	color: #fff;
+}
+
+.loremNine{
+	width: 500px;
+	background: #8bf593;
+	padding: 10px;
+	margin: auto;
+	display: none;
+	overflow: hidden;
+}
+
+.removeFun{
+	border: 2px solid #222;
+	background: orange;
+	padding: 20px;
+}
+
+.cssClass{
+	font-size: 50px;
+	color: red;
+}
+
+.cssClass2nd{
+	width: 300px;
+	height: 300px;
+	border: 2px solid red;
+}
+
+.cssClass2ndAnother{
+	background: green;
+}
+
+.item18{
+	width: 200px;
+	height: 200px;
+	background: green;
+	border: 2px solid red;
+}
+
+.ancestors * {
+	display: block;
+	border: 2px solid #999;
+	color: #999;
+	padding: 5px;
+	margin: 15px;
+}
+
+.descedants *{
+	border: 2px solid #333;
+	padding: 5px;
+	margin: 15px;
+	color: #333;
+	display: block; 
+}
+
+.siblings *{
+	border: 2px solid #333;
+	padding: 5px;
+	margin: 15px;
+	color: #333;
+	display: block; 
+}
+
+.filtering{
+	border: 1px solid #333;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.filtering2{
+	border: 1px solid #333;
+	padding: 10px;
+	margin: 10px 0;
+}
+
+.index td{
+	padding: 5px;
+	margin: auto;
+	color: #333;
+	text-align: center;
+	color: red;
+}
+
+.indexManin{
+	background: #23ab40;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.indexManin a{
+	text-decoration: none;
+	color: #fff;
+}

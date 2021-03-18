@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery CSS Classes: 1.addClass</h3></u><br>
+
+			<p id="cssClass1">Lorem ipsum dolor sit amet.</p><br>
+
+			<button class="btn" id="btn1">Click here</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn1").click(function(){
+						$("#cssClass1").addClass("cssClass");
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery CSS Classes: 2.removeClass</h3></u><br>
+
+			<div class="cssClass2nd cssClass2ndAnother" id="div1"></div><br>
+
+			<button class="btn" id="btn2">Click here</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn2").click(function(){
+						$("#div1").removeClass("cssClass2ndAnother");
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery CSS Classes: 3.toggleClass</h3></u><br>
+
+			<div class="cssClass2nd cssClass2ndAnother" id="div2"></div><br>
+
+			<button class="btn" id="btn3">Click here</button>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$("#btn3").click(function(){
+						$("#div2").removeClass("cssClass2nd cssClass2ndAnother");
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

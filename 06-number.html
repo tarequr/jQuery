@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Fade:  1.fadeIn</h3></u><br>
+
+			<button class="btn" id="button">Click here(show)</button>
+
+			<div class="box1"></div>
+			<div class="box2"></div>
+			<div class="box3"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#button').click(function(){
+						$('.box1').fadeIn(1000);
+						$('.box2').fadeIn(3000);
+						$('.box3').fadeIn(5000);
+					});
+				});
+			</script><br><br>
+
+
+			<u><h3 align="center">jQuery Fade:  2.fadeOut</h3></u><br>
+
+			<button class="btn" id="button2">Click here(hide)</button>
+
+			<div class="box4"></div>
+			<div class="box5"></div>
+			<div class="box6"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#button2').click(function(){
+						$('.box4').fadeOut(1000);
+						$('.box5').fadeOut(3000);
+						$('.box6').fadeOut(5000);
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Fade:  3.fadeToggle</h3></u><br>
+
+			<button class="btn" id="button3">Click here(hide & show)</button>
+
+			<div class="box7"></div>
+			<div class="box8"></div>
+			<div class="box9"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#button3').click(function(){
+						$('.box7').fadeToggle(1000);
+						$('.box8').fadeToggle(2000);
+						$('.box9').fadeToggle(3000);
+					});
+				});
+			</script>
+
+			<u><h3 align="center">jQuery Fade:  4.fadeTo</h3></u><br>
+
+			<button class="btn" id="button4">Click here(opacity)</button>
+
+			<div class="box10"></div>
+			<div class="box11"></div>
+			<div class="box12"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#button4').click(function(){
+						//first slow is speed and second 0.3 is opacity.
+						$('.box10').fadeTo('slow',0.3);
+						$('.box11').fadeTo('slow',0.5);
+						$('.box12').fadeTo('slow',0.7);
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

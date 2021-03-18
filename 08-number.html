@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery Animation: 1.Left side animate(with opacity)</h3></u><br>
+
+			<button class="btn" id="btn1">Start Animation</button>
+			
+			<div class="animate" id="animate1"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn1').click(function(){
+						$('#animate1').animate({
+							left: '300px',
+							opacity: '0.3',
+						});
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Animation: 2.Left side animate(with hight width)</h3></u><br>
+
+			<button class="btn" id="btn2">Start Animation</button>
+			
+			<div class="animate" id="animate2"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn2').click(function(){
+						$('#animate2').animate({
+							left: '300px',
+							width: '170px',
+							height: '170px',
+						});
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Animation: 3.Left side animate(hight & width decrement)</h3></u><br>
+
+			<button class="btn" id="btn3">Please click more than 1</button>
+			
+			<div class="animate" id="animate3"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn3').click(function(){
+						$('#animate3').animate({
+							left: '300px',
+							width: '-=20px',
+							height: '-=20px',
+						});
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Animation: 4.height toggle</h3></u><br>
+
+			<button class="btn" id="btn4">Start Animation</button>
+			
+			<div class="animate" id="animate4"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn4').click(function(){
+						$('#animate4').animate({
+							height: 'toggle',
+						});
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Animation: 5.increase height and width(back to again)</h3></u><br>
+
+			<button class="btn" id="btn5">Start Animation</button>
+			
+			<div class="animate" id="animate5"></div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn5').click(function(){
+						var sabbir = $('#animate5');
+
+						sabbir.animate({height: '300px', opacity: '0.5'},'slow');
+						sabbir.animate({width: '300px', opacity: '0.7'},'slow');
+						sabbir.animate({height: '120px', opacity: '0.4'},'slow');
+						sabbir.animate({width: '120px', opacity: '1'},'slow');
+					});
+				});
+			</script><br><br>
+
+			<u><h3 align="center">jQuery Animation: 6.increase height and width(back to again)</h3></u><br>
+
+			<button class="btn" id="btn6">Start Animation</button>
+			
+			<div class="animate2" id="animate6">Tarequr</div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					$('#btn6').click(function(){
+						var sabbir = $('#animate6');
+
+						sabbir.animate({left: '300px'},'slow');
+						sabbir.animate({width: '300px',},'slow');
+						sabbir.animate({fontSize: '40px',},'fast');
+					});
+				});
+			</script><br><br>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>

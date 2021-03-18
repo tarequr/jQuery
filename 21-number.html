@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>jQuery practice</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+	<section class="content">
+		<div class="header">
+			<h2><button class="indexManin"><a href="index.html" class="home">Home</a></button>
+			Tutorial: jQuery Fundamentals</h2>
+		</div>
+		<div class="maincontent">
+			<u><h3 align="center">jQuery siblings: 1.siblings,next,nextAll,nextUntil,prev,prevAll,prevUntil</h3></u><br>
+
+			<div class="siblings">
+				<div>div
+					<button>Click me</button>
+					<p>p</p>
+					<span>span</span>
+					<h2>h2</h2>
+					<h3>h3</h3>
+					<p>p</p>
+					<a href="#">link</a>
+				</div>
+			</div>
+
+			<script type="text/javascript">
+				$(document).ready(function(){
+					// $("h2").siblings().css({
+					// $("h2").siblings("p").css({
+					// $("h2").next().css({
+					// $("h2").nextAll().css({
+					// $("h2").nextUntil("a").css({
+					// $("h2").prev().css({
+					// $("h2").prevAll().css({
+					$("h2").prevUntil("button").css({
+						"color"  : "green",
+						"border" : "2px solid red"
+					});
+				});
+			</script>
+		</div>
+
+		<div class="footer">
+			<h2>
+				<script type="text/javascript">
+				var year = new Date();
+				document.write(year.getFullYear());
+				</script> &copy; Tarequr Rahman Sabbir</h2>
+		</div>
+	</section>
+</body>
+</html>
